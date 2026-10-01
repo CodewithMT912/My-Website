@@ -1,0 +1,628 @@
+/* =====================================================
+   CODEWITH_MT
+   ABOUT HERO
+===================================================== */
+
+.about-hero {
+  position: relative;
+
+  min-height: 90vh;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 60px;
+
+  padding: 120px 8% 90px;
+
+  overflow: hidden;
+
+  z-index: 5;
+}
+
+
+/* =====================================================
+   CONTENT
+===================================================== */
+
+.about-hero-content {
+  position: relative;
+
+  z-index: 5;
+
+  width: 55%;
+
+  max-width: 720px;
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.about-hero-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 28px;
+
+  color: #2998ff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.about-hero-label span {
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #2998ff;
+
+  box-shadow:
+    0 0 16px rgba(41, 152, 255, 0.9);
+}
+
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.about-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size:
+    clamp(70px, 9vw, 130px);
+
+  font-weight: 800;
+
+  line-height: 0.86;
+
+  letter-spacing: -6px;
+}
+
+.about-hero h1 span {
+  color: #2998ff;
+
+  text-shadow:
+    0 0 40px rgba(41, 152, 255, 0.25);
+}
+
+
+/* =====================================================
+   DESCRIPTION
+===================================================== */
+
+.about-hero-content > p {
+  max-width: 560px;
+
+  margin: 35px 0 0;
+
+  color:
+    rgba(255, 255, 255, 0.55);
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+
+/* =====================================================
+   META
+===================================================== */
+
+.about-hero-meta {
+  display: flex;
+
+  align-items: center;
+
+  gap: 35px;
+
+  margin-top: 42px;
+}
+
+.about-hero-meta div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color:
+    rgba(255, 255, 255, 0.35);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.7px;
+}
+
+.meta-line {
+  width: 22px;
+  height: 1px;
+
+  background:
+    rgba(41, 152, 255, 0.65);
+}
+
+
+/* =====================================================
+   VISUAL
+===================================================== */
+
+.about-hero-visual {
+  position: relative;
+
+  width: 430px;
+  height: 430px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =====================================================
+   BLUE AMBIENT GLOW
+===================================================== */
+
+.about-hero-visual::before {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 120, 255, 0.16),
+      transparent 70%
+    );
+
+  filter: blur(30px);
+
+  animation:
+    core-glow 5s ease-in-out infinite alternate;
+}
+
+
+/* =====================================================
+   ORBITS
+===================================================== */
+
+.hero-orbit {
+  position: absolute;
+
+  border:
+    1px solid rgba(41, 152, 255, 0.18);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.orbit-one {
+  width: 300px;
+  height: 300px;
+
+  transform:
+    rotateX(65deg)
+    rotateZ(20deg);
+
+  animation:
+    orbit-rotate-one 18s linear infinite;
+}
+
+.orbit-two {
+  width: 360px;
+  height: 210px;
+
+  transform:
+    rotateX(65deg)
+    rotateZ(-25deg);
+
+  border-color:
+    rgba(41, 152, 255, 0.12);
+
+  animation:
+    orbit-rotate-two 22s linear infinite reverse;
+}
+
+.orbit-three {
+  width: 240px;
+  height: 380px;
+
+  transform:
+    rotateY(65deg)
+    rotateZ(25deg);
+
+  border-color:
+    rgba(100, 190, 255, 0.1);
+
+  animation:
+    orbit-rotate-three 25s linear infinite;
+}
+
+
+/* =====================================================
+   CORE
+===================================================== */
+
+.hero-core {
+  position: relative;
+
+  z-index: 3;
+
+  width: 125px;
+  height: 125px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border:
+    1px solid rgba(41, 152, 255, 0.45);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      rgba(30, 130, 255, 0.25),
+      rgba(2, 6, 23, 0.9) 70%
+    );
+
+  box-shadow:
+    0 0 50px rgba(0, 110, 255, 0.18),
+    inset 0 0 35px rgba(0, 110, 255, 0.08);
+
+  animation:
+    core-float 4s ease-in-out infinite;
+}
+
+.hero-core span {
+  color: #2998ff;
+
+  font-size: 28px;
+
+  font-weight: 700;
+
+  text-shadow:
+    0 0 25px rgba(41, 152, 255, 0.6);
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes orbit-rotate-one {
+
+  from {
+    transform:
+      rotateX(65deg)
+      rotateZ(20deg)
+      rotate(0deg);
+  }
+
+  to {
+    transform:
+      rotateX(65deg)
+      rotateZ(20deg)
+      rotate(360deg);
+  }
+
+}
+
+@keyframes orbit-rotate-two {
+
+  from {
+    transform:
+      rotateX(65deg)
+      rotateZ(-25deg)
+      rotate(0deg);
+  }
+
+  to {
+    transform:
+      rotateX(65deg)
+      rotateZ(-25deg)
+      rotate(-360deg);
+  }
+
+}
+
+@keyframes orbit-rotate-three {
+
+  from {
+    transform:
+      rotateY(65deg)
+      rotateZ(25deg)
+      rotate(0deg);
+  }
+
+  to {
+    transform:
+      rotateY(65deg)
+      rotateZ(25deg)
+      rotate(360deg);
+  }
+
+}
+
+@keyframes core-float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+}
+
+@keyframes core-glow {
+
+  from {
+    opacity: 0.55;
+
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: scale(1.08);
+  }
+
+}
+
+
+/* =====================================================
+   SCROLL
+===================================================== */
+
+.about-scroll {
+  position: absolute;
+
+  left: 8%;
+
+  bottom: 30px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  color:
+    rgba(255, 255, 255, 0.28);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.scroll-line {
+  position: relative;
+
+  width: 55px;
+  height: 1px;
+
+  overflow: hidden;
+
+  background:
+    rgba(255, 255, 255, 0.12);
+}
+
+.scroll-line span {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 20px;
+  height: 1px;
+
+  background: #2998ff;
+
+  animation:
+    scroll-line-move 2s ease-in-out infinite;
+}
+
+@keyframes scroll-line-move {
+
+  0% {
+    transform: translateX(-25px);
+  }
+
+  50% {
+    transform: translateX(30px);
+  }
+
+  100% {
+    transform: translateX(55px);
+  }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .about-hero {
+    padding:
+      110px 6% 80px;
+  }
+
+  .about-hero-content {
+    width: 60%;
+  }
+
+  .about-hero-visual {
+    width: 330px;
+    height: 330px;
+  }
+
+  .orbit-one {
+    width: 240px;
+    height: 240px;
+  }
+
+  .orbit-two {
+    width: 290px;
+    height: 170px;
+  }
+
+  .orbit-three {
+    width: 200px;
+    height: 300px;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .about-hero {
+    min-height: auto;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    gap: 55px;
+
+    padding:
+      120px 6% 100px;
+  }
+
+  .about-hero-content {
+    width: 100%;
+  }
+
+  .about-hero h1 {
+    font-size:
+      clamp(62px, 17vw, 88px);
+
+    letter-spacing: -4px;
+  }
+
+  .about-hero-content > p {
+    max-width: 100%;
+
+    margin-top: 28px;
+
+    font-size: 14px;
+  }
+
+  .about-hero-meta {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    margin-top: 30px;
+  }
+
+  .about-hero-visual {
+    width: 100%;
+    height: 300px;
+  }
+
+  .orbit-one {
+    width: 220px;
+    height: 220px;
+  }
+
+  .orbit-two {
+    width: 270px;
+    height: 155px;
+  }
+
+  .orbit-three {
+    width: 180px;
+    height: 280px;
+  }
+
+  .hero-core {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero-core span {
+    font-size: 23px;
+  }
+
+  .about-scroll {
+    display: none;
+  }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+===================================================== */
+
+@media (max-width: 380px) {
+
+  .about-hero {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .about-hero h1 {
+    font-size: 57px;
+
+    letter-spacing: -3px;
+  }
+
+  .about-hero-content > p {
+    font-size: 13px;
+  }
+
+  .about-hero-visual {
+    height: 270px;
+  }
+
+}

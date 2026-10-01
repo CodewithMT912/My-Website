@@ -1,0 +1,484 @@
+.contact-page {
+  min-height: 100vh;
+  padding: 150px 7% 80px;
+  background: transparent;
+  color: #ffffff;
+}
+
+.contact-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+/* ===============================
+   LABEL
+================================ */
+
+.contact-page-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+
+  margin-bottom: 35px;
+}
+
+.contact-page-label span {
+  width: 35px;
+  height: 1px;
+  background: #4da3ff;
+}
+
+
+/* ===============================
+   HEADING
+================================ */
+
+.contact-page-heading {
+  max-width: 850px;
+  margin-bottom: 70px;
+}
+
+.contact-page-heading h1 {
+  margin: 0;
+
+  font-size: clamp(55px, 8vw, 110px);
+  line-height: 0.95;
+  font-weight: 700;
+  letter-spacing: -4px;
+}
+
+.contact-page-heading h1 span {
+  color: #4da3ff;
+}
+
+.contact-page-heading p {
+  max-width: 600px;
+
+  margin-top: 30px;
+
+  font-size: 17px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+
+/* ===============================
+   WHATSAPP CARD
+================================ */
+
+.whatsapp-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 45px;
+
+  padding: 55px;
+
+  text-decoration: none;
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 25px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    background 0.4s ease;
+}
+
+.whatsapp-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  left: -150px;
+  top: -150px;
+
+  background: rgba(37, 211, 102, 0.08);
+
+  border-radius: 50%;
+
+  filter: blur(50px);
+
+  transition: 0.5s ease;
+}
+
+.whatsapp-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(37, 211, 102, 0.5);
+
+  background: rgba(37, 211, 102, 0.035);
+}
+
+.whatsapp-card:hover::before {
+  transform: scale(1.4);
+}
+
+
+/* ===============================
+   WHATSAPP ICON
+================================ */
+
+.whatsapp-icon {
+  position: relative;
+  z-index: 1;
+
+  width: 110px;
+  height: 110px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  border-radius: 50%;
+
+  color: #25d366;
+
+  background: rgba(37, 211, 102, 0.06);
+
+  transition: 0.4s ease;
+}
+
+.whatsapp-icon svg {
+  width: 60px;
+  height: 60px;
+}
+
+.whatsapp-card:hover .whatsapp-icon {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(37, 211, 102, 0.2);
+}
+
+
+/* ===============================
+   CONTENT
+================================ */
+
+.whatsapp-content {
+  position: relative;
+  z-index: 1;
+}
+
+.whatsapp-content > span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #25d366;
+}
+
+.whatsapp-content h2 {
+  margin: 8px 0;
+
+  font-size: 45px;
+  line-height: 1;
+}
+
+.whatsapp-content p {
+  margin: 15px 0;
+
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.6;
+}
+
+.whatsapp-content strong {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+
+/* ===============================
+   ARROW
+================================ */
+
+.whatsapp-arrow {
+  position: relative;
+  z-index: 1;
+
+  margin-left: auto;
+
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+
+  font-size: 25px;
+
+  transition: 0.4s ease;
+}
+
+.whatsapp-card:hover .whatsapp-arrow {
+  transform: translate(5px, -5px);
+  border-color: #25d366;
+  color: #25d366;
+}
+
+
+/* ===============================
+   BOTTOM
+================================ */
+
+.contact-page-bottom {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 45px;
+
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.contact-page-bottom span {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #25d366;
+
+  box-shadow: 0 0 12px rgba(37, 211, 102, 0.6);
+}
+
+
+/* ===============================
+   SOCIAL LINKS
+================================ */
+
+.social-links-wrap {
+  margin-top: 52px;
+}
+
+.social-links-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 24px;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.social-links-header span {
+  width: 35px;
+  height: 1px;
+  background: #4da3ff;
+}
+
+.social-links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.social-link-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  padding: 22px 24px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.social-link-card::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--social-accent) 18%, transparent),
+    transparent 60%
+  );
+
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.social-link-card:hover {
+  transform: translateY(-6px);
+  border-color: color-mix(in srgb, var(--social-accent) 60%, white 15%);
+  box-shadow: 0 18px 40px rgba(10, 18, 36, 0.35);
+}
+
+.social-link-card:hover::before {
+  opacity: 1;
+}
+
+.social-icon-box,
+.social-text,
+.social-arrow {
+  position: relative;
+  z-index: 1;
+}
+
+.social-icon-box {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: color-mix(in srgb, var(--social-accent) 18%, rgba(255, 255, 255, 0.04));
+  border: 1px solid color-mix(in srgb, var(--social-accent) 35%, transparent);
+
+  color: var(--social-accent);
+  font-size: 24px;
+}
+
+.social-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.social-text span {
+  font-size: 11px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.social-text strong {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.social-arrow {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.social-link-card:hover .social-arrow {
+  border-color: color-mix(in srgb, var(--social-accent) 60%, white 15%);
+  color: var(--social-accent);
+}
+
+
+/* ===============================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+  .contact-page {
+    padding: 120px 20px 60px;
+  }
+
+  .contact-page-heading {
+    margin-bottom: 45px;
+  }
+
+  .contact-page-heading h1 {
+    font-size: clamp(48px, 14vw, 75px);
+    letter-spacing: -2px;
+  }
+
+  .contact-page-heading p {
+    font-size: 15px;
+  }
+
+  .whatsapp-card {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 25px;
+
+    padding: 35px 25px;
+  }
+
+  .whatsapp-icon {
+    width: 90px;
+    height: 90px;
+  }
+
+  .whatsapp-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .whatsapp-content h2 {
+    font-size: 38px;
+  }
+
+  .whatsapp-arrow {
+    position: absolute;
+
+    right: 20px;
+    top: 20px;
+
+    width: 45px;
+    height: 45px;
+  }
+
+  .contact-page-bottom {
+    font-size: 11px;
+  }
+
+  .social-links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-link-card {
+    padding: 18px 18px;
+  }
+
+  .social-text strong {
+    font-size: 16px;
+  }
+}

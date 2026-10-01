@@ -1,0 +1,650 @@
+/* =========================================
+   WHY CODEWITH_MT
+========================================= */
+
+.why-codewithmt {
+  position: relative;
+
+  width: 100%;
+
+  padding: 140px 7%;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.why-codewithmt-container {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+/* =========================================
+   LABEL
+========================================= */
+
+.why-codewithmt-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 60px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  transition:
+    color 0.3s ease,
+    letter-spacing 0.3s ease;
+}
+
+.why-codewithmt-label:hover {
+  color: #ffffff;
+
+  letter-spacing: 4px;
+}
+
+.why-codewithmt-label span {
+  width: 42px;
+
+  height: 1px;
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 0 12px rgba(59, 130, 246, 0.8);
+
+  transition:
+    width 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.why-codewithmt-label:hover span {
+  width: 65px;
+
+  box-shadow:
+    0 0 20px rgba(59, 130, 246, 1);
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.why-codewithmt-header {
+  display: grid;
+
+  grid-template-columns: 1fr 0.7fr;
+
+  gap: 100px;
+
+  align-items: end;
+
+  margin-bottom: 90px;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.why-codewithmt-title h2 {
+  margin: 0;
+
+  font-size: clamp(55px, 7vw, 100px);
+
+  line-height: 0.9;
+
+  letter-spacing: -4px;
+
+  font-weight: 700;
+}
+
+.why-codewithmt-title h2 span {
+  color: #3b82f6;
+
+  text-shadow:
+    0 0 20px rgba(59, 130, 246, 0.35);
+
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.why-codewithmt-title h2:hover span {
+  color: #60a5fa;
+
+  text-shadow:
+    0 0 35px rgba(59, 130, 246, 0.9);
+}
+
+/* =========================================
+   INTRO
+========================================= */
+
+.why-codewithmt-intro p {
+  max-width: 520px;
+
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.why-codewithmt-intro p:hover {
+  color: rgba(255, 255, 255, 0.8);
+
+  transform: translateX(5px);
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.why-codewithmt-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.why-codewithmt-card {
+  position: relative;
+
+  min-height: 320px;
+
+  padding: 35px;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+
+  background: rgba(255, 255, 255, 0.025);
+
+  backdrop-filter: blur(5px);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.45s ease,
+    border-color 0.45s ease,
+    background 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+/* TOP LINE */
+
+.why-codewithmt-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: -1px;
+  left: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 0 15px rgba(59, 130, 246, 0.9);
+
+  transition: width 0.5s ease;
+}
+
+/* GLOW */
+
+.why-codewithmt-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -90px;
+  bottom: -90px;
+
+  border-radius: 50%;
+
+  background: rgba(59, 130, 246, 0.08);
+
+  filter: blur(50px);
+
+  opacity: 0;
+
+  transition: opacity 0.5s ease;
+}
+
+/* HOVER */
+
+.why-codewithmt-card:hover {
+  transform: translateY(-9px);
+
+  border-color: rgba(59, 130, 246, 0.5);
+
+  background: rgba(59, 130, 246, 0.055);
+
+  box-shadow:
+    0 20px 55px rgba(0, 60, 180, 0.16);
+}
+
+.why-codewithmt-card:hover::before {
+  width: 100%;
+}
+
+.why-codewithmt-card:hover::after {
+  opacity: 1;
+}
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.why-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.why-card-number {
+  font-size: 13px;
+
+  letter-spacing: 2px;
+
+  color: #3b82f6;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.why-codewithmt-card:hover .why-card-number {
+  transform: translateX(5px);
+
+  color: #60a5fa;
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.why-card-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  border: 1px solid rgba(59, 130, 246, 0.25);
+
+  color: #3b82f6;
+
+  font-size: 24px;
+
+  transition:
+    transform 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.why-codewithmt-card:hover .why-card-icon {
+  transform: rotate(8deg) scale(1.08);
+
+  color: #60a5fa;
+
+  border-color: rgba(59, 130, 246, 0.7);
+
+  box-shadow:
+    0 0 25px rgba(59, 130, 246, 0.2);
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.why-card-content {
+  margin-top: 50px;
+}
+
+.why-card-content h3 {
+  margin: 0 0 18px;
+
+  font-size: 17px;
+
+  letter-spacing: 2.5px;
+
+  color: #ffffff;
+
+  transition:
+    color 0.3s ease,
+    letter-spacing 0.3s ease;
+}
+
+.why-codewithmt-card:hover .why-card-content h3 {
+  color: #60a5fa;
+
+  letter-spacing: 3px;
+}
+
+.why-card-content p {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.85;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  transition: color 0.3s ease;
+}
+
+.why-codewithmt-card:hover .why-card-content p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* =========================================
+   CARD LINE
+========================================= */
+
+.why-card-line {
+  position: absolute;
+
+  left: 35px;
+  right: 35px;
+
+  bottom: 25px;
+
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.07);
+
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.why-codewithmt-card:hover .why-card-line {
+  background: rgba(59, 130, 246, 0.5);
+
+  box-shadow:
+    0 0 10px rgba(59, 130, 246, 0.4);
+}
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.why-codewithmt-bottom {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 80px;
+}
+
+.why-bottom-line {
+  width: 60px;
+
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 0 10px rgba(59, 130, 246, 0.8);
+}
+
+.why-codewithmt-bottom p {
+  margin: 0;
+
+  font-size: 15px;
+
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.why-codewithmt-bottom p span {
+  color: #3b82f6;
+
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.why-codewithmt-bottom p span:hover {
+  color: #60a5fa;
+
+  text-shadow:
+    0 0 15px rgba(59, 130, 246, 0.7);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .why-codewithmt {
+    padding: 110px 6%;
+  }
+
+  .why-codewithmt-header {
+    gap: 50px;
+  }
+
+  .why-codewithmt-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .why-codewithmt {
+    padding: 100px 7%;
+  }
+
+  .why-codewithmt-label {
+    margin-bottom: 45px;
+  }
+
+  .why-codewithmt-header {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    margin-bottom: 65px;
+  }
+
+  .why-codewithmt-title h2 {
+    font-size: clamp(48px, 13vw, 72px);
+
+    letter-spacing: -3px;
+  }
+
+  .why-codewithmt-intro p {
+    max-width: 100%;
+
+    font-size: 15px;
+  }
+
+  .why-codewithmt-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .why-codewithmt-card {
+    min-height: 310px;
+
+    padding: 28px;
+  }
+
+  .why-card-content {
+    margin-top: 45px;
+  }
+
+  .why-card-content h3 {
+    font-size: 16px;
+  }
+
+  .why-card-content p {
+    font-size: 14px;
+  }
+
+  .why-card-line {
+    left: 28px;
+    right: 28px;
+  }
+
+  .why-codewithmt-bottom {
+    margin-top: 60px;
+  }
+
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .why-codewithmt {
+    padding: 80px 6%;
+  }
+
+  .why-codewithmt-label {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+  .why-codewithmt-label span {
+    width: 30px;
+  }
+
+  .why-codewithmt-title h2 {
+    font-size: 45px;
+
+    letter-spacing: -2px;
+  }
+
+  .why-codewithmt-intro p {
+    font-size: 14px;
+
+    line-height: 1.8;
+  }
+
+  .why-codewithmt-card {
+    min-height: 300px;
+
+    padding: 24px;
+  }
+
+  .why-card-icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 21px;
+  }
+
+  .why-card-content {
+    margin-top: 42px;
+  }
+
+  .why-card-content h3 {
+    font-size: 15px;
+
+    letter-spacing: 2px;
+  }
+
+  .why-card-content p {
+    font-size: 13px;
+  }
+
+  .why-card-line {
+    left: 24px;
+    right: 24px;
+  }
+
+  .why-codewithmt-bottom p {
+    font-size: 12px;
+
+    line-height: 1.7;
+  }
+
+}
+
+/* =========================================
+   TOUCH DEVICES
+========================================= */
+
+@media (hover: none) {
+
+  .why-codewithmt-card:hover {
+    transform: none;
+
+    border-color: rgba(255, 255, 255, 0.09);
+
+    background: rgba(255, 255, 255, 0.025);
+
+    box-shadow: none;
+  }
+
+  .why-codewithmt-card:hover::before {
+    width: 0;
+  }
+
+  .why-codewithmt-card:hover::after {
+    opacity: 0;
+  }
+
+  .why-codewithmt-card:hover .why-card-icon {
+    transform: none;
+
+    color: #3b82f6;
+
+    border-color: rgba(59, 130, 246, 0.25);
+
+    box-shadow: none;
+  }
+
+}

@@ -1,0 +1,599 @@
+.who-we-are {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 140px 7%;
+  background:
+    radial-gradient(
+      circle at 15% 30%,
+      rgba(20, 80, 180, 0.12),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(0, 120, 255, 0.08),
+      transparent 35%
+    ),
+    #030712;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* =========================================
+   BACKGROUND GRID
+========================================= */
+
+.who-we-are::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 80px 80px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
+
+  pointer-events: none;
+}
+
+/* Moving glow */
+
+.who-we-are::after {
+  content: "";
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  top: 20%;
+  right: -200px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 110, 255, 0.08);
+
+  filter: blur(100px);
+
+  animation: whoGlow 8s ease-in-out infinite alternate;
+
+  pointer-events: none;
+}
+
+@keyframes whoGlow {
+  from {
+    transform: translateY(-40px);
+    opacity: 0.4;
+  }
+
+  to {
+    transform: translateY(80px);
+    opacity: 0.8;
+  }
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.who-we-are-container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   SECTION LABEL
+========================================= */
+
+.who-we-are-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 70px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  transition:
+    color 0.3s ease,
+    letter-spacing 0.3s ease;
+}
+
+.who-we-are-label:hover {
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.who-we-are-label span {
+  width: 42px;
+  height: 1px;
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 0 8px rgba(59, 130, 246, 0.7);
+
+  transition:
+    width 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.who-we-are-label:hover span {
+  width: 65px;
+
+  box-shadow:
+    0 0 18px rgba(59, 130, 246, 1);
+}
+
+/* =========================================
+   MAIN GRID
+========================================= */
+
+.who-we-are-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 100px;
+
+  align-items: start;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+
+.who-we-are-heading {
+  transition: transform 0.5s ease;
+}
+
+.who-we-are-heading:hover {
+  transform: translateX(8px);
+}
+
+.who-we-are-heading h2 {
+  margin: 0;
+
+  font-size: clamp(48px, 6vw, 88px);
+
+  line-height: 0.95;
+
+  font-weight: 700;
+
+  letter-spacing: -3px;
+}
+
+.who-we-are-heading h2 span {
+  color: #3b82f6;
+
+  text-shadow:
+    0 0 15px rgba(59, 130, 246, 0.3);
+
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.who-we-are-heading:hover h2 span {
+  color: #60a5fa;
+
+  text-shadow:
+    0 0 25px rgba(59, 130, 246, 0.8);
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.who-we-are-content {
+  max-width: 620px;
+}
+
+.who-we-are-content p {
+  margin: 0 0 28px;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.58);
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.who-we-are-content p:hover {
+  color: rgba(255, 255, 255, 0.85);
+
+  transform: translateX(5px);
+}
+
+.who-we-are-content .who-we-are-intro {
+  margin-bottom: 35px;
+
+  font-size: 22px;
+
+  line-height: 1.65;
+
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* =========================================
+   VALUES
+========================================= */
+
+.who-we-are-values {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 35px;
+
+  margin-top: 130px;
+
+  padding-top: 45px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* =========================================
+   VALUE CARD
+========================================= */
+
+.who-value {
+  position: relative;
+
+  padding: 30px;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.035),
+      rgba(255, 255, 255, 0.008)
+    );
+
+  backdrop-filter: blur(8px);
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    background 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* Hover */
+
+.who-value:hover {
+  transform: translateY(-10px);
+
+  border-color: rgba(59, 130, 246, 0.55);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(59, 130, 246, 0.12),
+      rgba(255, 255, 255, 0.02)
+    );
+
+  box-shadow:
+    0 15px 50px rgba(0, 70, 180, 0.18),
+    inset 0 0 25px rgba(59, 130, 246, 0.03);
+}
+
+/* Top glowing line */
+
+.who-value::before {
+  content: "";
+
+  position: absolute;
+
+  top: -1px;
+  left: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 0 12px rgba(59, 130, 246, 0.8);
+
+  transition: width 0.5s ease;
+}
+
+.who-value:hover::before {
+  width: 100%;
+}
+
+/* =========================================
+   VALUE NUMBER
+========================================= */
+
+.who-value-number {
+  font-size: 13px;
+
+  letter-spacing: 2px;
+
+  color: #3b82f6;
+
+  margin-bottom: 18px;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.who-value:hover .who-value-number {
+  transform: translateX(5px);
+
+  color: #60a5fa;
+}
+
+/* =========================================
+   VALUE LINE
+========================================= */
+
+.who-value-line {
+  width: 45px;
+  height: 1px;
+
+  margin-bottom: 25px;
+
+  background: rgba(59, 130, 246, 0.7);
+
+  transition:
+    width 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.who-value:hover .who-value-line {
+  width: 80px;
+
+  box-shadow:
+    0 0 10px rgba(59, 130, 246, 0.7);
+}
+
+/* =========================================
+   VALUE TITLE
+========================================= */
+
+.who-value h3 {
+  margin: 0 0 15px;
+
+  font-size: 15px;
+
+  letter-spacing: 3px;
+
+  color: #fff;
+
+  transition:
+    color 0.3s ease,
+    letter-spacing 0.3s ease;
+}
+
+.who-value:hover h3 {
+  color: #60a5fa;
+
+  letter-spacing: 4px;
+}
+
+/* =========================================
+   VALUE DESCRIPTION
+========================================= */
+
+.who-value p {
+  max-width: 330px;
+
+  margin: 0;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  transition: color 0.3s ease;
+}
+
+.who-value:hover p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .who-we-are {
+    padding: 110px 6%;
+  }
+
+  .who-we-are-grid {
+    gap: 60px;
+  }
+
+  .who-we-are-heading h2 {
+    font-size: clamp(45px, 7vw, 70px);
+  }
+
+  .who-we-are-values {
+    gap: 20px;
+  }
+
+  .who-value {
+    padding: 25px;
+  }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .who-we-are {
+    min-height: auto;
+
+    padding: 100px 7%;
+  }
+
+  .who-we-are-label {
+    margin-bottom: 50px;
+  }
+
+  .who-we-are-grid {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .who-we-are-heading:hover {
+    transform: none;
+  }
+
+  .who-we-are-heading h2 {
+    font-size: clamp(48px, 13vw, 72px);
+  }
+
+  .who-we-are-content {
+    max-width: 100%;
+  }
+
+  .who-we-are-content .who-we-are-intro {
+    font-size: 19px;
+  }
+
+  .who-we-are-content p {
+    font-size: 15px;
+  }
+
+  .who-we-are-values {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    margin-top: 90px;
+  }
+
+  .who-value {
+    padding: 28px;
+  }
+
+  .who-value p {
+    max-width: 100%;
+  }
+
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .who-we-are {
+    padding: 80px 6%;
+  }
+
+  .who-we-are-label {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+  .who-we-are-label span {
+    width: 30px;
+  }
+
+  .who-we-are-heading h2 {
+    font-size: 46px;
+
+    letter-spacing: -2px;
+  }
+
+  .who-we-are-content .who-we-are-intro {
+    font-size: 18px;
+  }
+
+  .who-we-are-content p {
+    font-size: 14px;
+
+    line-height: 1.8;
+  }
+
+  .who-value {
+    padding: 24px;
+  }
+
+}
+
+/* =========================================
+   TOUCH DEVICES
+========================================= */
+
+@media (hover: none) {
+
+  .who-we-are-label:hover {
+    color: rgba(255, 255, 255, 0.55);
+
+    letter-spacing: 3px;
+  }
+
+  .who-we-are-heading:hover {
+    transform: none;
+  }
+
+  .who-we-are-content p:hover {
+    transform: none;
+
+    color: rgba(255, 255, 255, 0.58);
+  }
+
+  .who-value:hover {
+    transform: none;
+
+    border-color: rgba(255, 255, 255, 0.07);
+
+    background:
+      linear-gradient(
+        145deg,
+        rgba(255, 255, 255, 0.035),
+        rgba(255, 255, 255, 0.008)
+      );
+
+    box-shadow: none;
+  }
+
+  .who-value:hover::before {
+    width: 0;
+  }
+
+}

@@ -1,0 +1,852 @@
+/* =========================================
+   OUR STORY
+========================================= */
+
+.our-story {
+  position: relative;
+
+  width: 100%;
+
+  padding: 140px 7%;
+
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.our-story-container {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+/* =========================================
+   LABEL
+========================================= */
+
+.our-story-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 60px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  transition:
+    color 0.3s ease,
+    letter-spacing 0.3s ease;
+}
+
+.our-story-label:hover {
+  color: #ffffff;
+
+  letter-spacing: 4px;
+}
+
+.our-story-label span {
+  width: 42px;
+
+  height: 1px;
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 0 12px rgba(59, 130, 246, 0.8);
+
+  transition:
+    width 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.our-story-label:hover span {
+  width: 65px;
+
+  box-shadow:
+    0 0 20px rgba(59, 130, 246, 1);
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.our-story-header {
+  display: grid;
+
+  grid-template-columns: 1fr 0.7fr;
+
+  gap: 100px;
+
+  align-items: end;
+
+  margin-bottom: 120px;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.our-story-title h2 {
+  margin: 0;
+
+  font-size: clamp(52px, 7vw, 100px);
+
+  line-height: 0.9;
+
+  letter-spacing: -4px;
+
+  font-weight: 700;
+}
+
+.our-story-title h2 span {
+  color: #3b82f6;
+
+  text-shadow:
+    0 0 20px rgba(59, 130, 246, 0.35);
+
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.our-story-title h2:hover span {
+  color: #60a5fa;
+
+  text-shadow:
+    0 0 35px rgba(59, 130, 246, 0.9);
+}
+
+/* =========================================
+   INTRO
+========================================= */
+
+.our-story-intro p {
+  max-width: 520px;
+
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.our-story-intro p:hover {
+  color: rgba(255, 255, 255, 0.8);
+
+  transform: translateX(5px);
+}
+
+/* =========================================
+   MINI LINE
+========================================= */
+
+.story-mini-line {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 35px;
+
+  font-size: 10px;
+
+  letter-spacing: 2.5px;
+
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.story-mini-line span {
+  width: 35px;
+
+  height: 1px;
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 0 10px rgba(59, 130, 246, 0.7);
+}
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.story-timeline {
+  position: relative;
+
+  width: 100%;
+
+  padding: 20px 0;
+}
+
+/* =========================================
+   CENTER LINE
+========================================= */
+
+.story-center-line {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  left: 50%;
+
+  width: 1px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      rgba(59, 130, 246, 0.6),
+      rgba(59, 130, 246, 0.6),
+      transparent
+    );
+
+  transform: translateX(-50%);
+
+  box-shadow:
+    0 0 15px rgba(59, 130, 246, 0.3);
+}
+
+/* =========================================
+   STORY ITEM
+========================================= */
+
+.story-item {
+  position: relative;
+
+  display: flex;
+
+  width: 100%;
+
+  margin-bottom: 90px;
+}
+
+.story-item:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   LEFT / RIGHT
+========================================= */
+
+.story-item-left {
+  justify-content: flex-start;
+
+  padding-right: calc(50% + 50px);
+}
+
+.story-item-right {
+  justify-content: flex-end;
+
+  padding-left: calc(50% + 50px);
+}
+
+/* =========================================
+   TIMELINE POINT
+========================================= */
+
+.story-point {
+  position: absolute;
+
+  top: 45px;
+
+  left: 50%;
+
+  z-index: 5;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 18px;
+
+  height: 18px;
+
+  border: 1px solid rgba(59, 130, 246, 0.7);
+
+  background: #030712;
+
+  transform: translateX(-50%);
+
+  box-shadow:
+    0 0 20px rgba(59, 130, 246, 0.35);
+}
+
+.story-point span {
+  width: 6px;
+
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 0 12px rgba(59, 130, 246, 1);
+
+  animation: storyPulse 2s ease-in-out infinite;
+}
+
+@keyframes storyPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.5);
+
+    opacity: 1;
+  }
+
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.story-card {
+  position: relative;
+
+  width: 100%;
+
+  padding: 35px;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+
+  background: rgba(255, 255, 255, 0.025);
+
+  backdrop-filter: blur(5px);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.45s ease,
+    border-color 0.45s ease,
+    background 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+/* TOP BLUE LINE */
+
+.story-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: -1px;
+
+  left: 0;
+
+  width: 0;
+
+  height: 2px;
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 0 15px rgba(59, 130, 246, 0.9);
+
+  transition: width 0.5s ease;
+}
+
+/* GLOW */
+
+.story-card::after {
+  content: "";
+
+  position: absolute;
+
+  right: -100px;
+
+  bottom: -100px;
+
+  width: 200px;
+
+  height: 200px;
+
+  border-radius: 50%;
+
+  background: rgba(59, 130, 246, 0.08);
+
+  filter: blur(55px);
+
+  opacity: 0;
+
+  transition: opacity 0.5s ease;
+}
+
+/* HOVER */
+
+.story-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(59, 130, 246, 0.5);
+
+  background: rgba(59, 130, 246, 0.055);
+
+  box-shadow:
+    0 20px 55px rgba(0, 60, 180, 0.16);
+}
+
+.story-card:hover::before {
+  width: 100%;
+}
+
+.story-card:hover::after {
+  opacity: 1;
+}
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.story-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.story-number {
+  font-size: 13px;
+
+  letter-spacing: 2px;
+
+  color: #3b82f6;
+}
+
+.story-year {
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.story-card-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 58px;
+
+  height: 58px;
+
+  margin-top: 40px;
+
+  border: 1px solid rgba(59, 130, 246, 0.25);
+
+  color: #3b82f6;
+
+  font-size: 23px;
+
+  transition:
+    transform 0.4s ease,
+    color 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.story-card:hover .story-card-icon {
+  transform: rotate(8deg) scale(1.08);
+
+  color: #60a5fa;
+
+  border-color: rgba(59, 130, 246, 0.7);
+
+  box-shadow:
+    0 0 25px rgba(59, 130, 246, 0.2);
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.story-card h3 {
+  margin: 30px 0 16px;
+
+  font-size: 20px;
+
+  letter-spacing: 1px;
+
+  color: #ffffff;
+
+  transition:
+    color 0.3s ease,
+    letter-spacing 0.3s ease;
+}
+
+.story-card:hover h3 {
+  color: #60a5fa;
+
+  letter-spacing: 1.5px;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.story-card p {
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.85;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  transition: color 0.3s ease;
+}
+
+.story-card:hover p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* =========================================
+   CARD LINE
+========================================= */
+
+.story-card-line {
+  width: 50px;
+
+  height: 1px;
+
+  margin-top: 30px;
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 0 10px rgba(59, 130, 246, 0.7);
+
+  transition: width 0.4s ease;
+}
+
+.story-card:hover .story-card-line {
+  width: 100px;
+}
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.story-bottom {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  margin-top: 90px;
+}
+
+.story-bottom-line {
+  width: 60px;
+
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: #3b82f6;
+
+  box-shadow:
+    0 0 10px rgba(59, 130, 246, 0.8);
+}
+
+.story-bottom p {
+  margin: 0;
+
+  font-size: 15px;
+
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.story-bottom p span {
+  color: #3b82f6;
+
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.story-bottom p span:hover {
+  color: #60a5fa;
+
+  text-shadow:
+    0 0 15px rgba(59, 130, 246, 0.7);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .our-story {
+    padding: 110px 6%;
+  }
+
+  .our-story-header {
+    gap: 50px;
+  }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .our-story {
+    padding: 100px 7%;
+  }
+
+  .our-story-label {
+    margin-bottom: 45px;
+  }
+
+  .our-story-header {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    margin-bottom: 70px;
+  }
+
+  .our-story-title h2 {
+    font-size: clamp(48px, 13vw, 72px);
+
+    letter-spacing: -3px;
+  }
+
+  .our-story-intro p {
+    max-width: 100%;
+
+    font-size: 15px;
+  }
+
+  /* REMOVE CENTER LINE */
+
+  .story-center-line {
+    left: 9px;
+
+    transform: none;
+  }
+
+  /* ALL ITEMS SAME SIDE */
+
+  .story-item,
+  .story-item-left,
+  .story-item-right {
+    justify-content: flex-start;
+
+    padding-left: 40px;
+
+    padding-right: 0;
+  }
+
+  .story-item {
+    margin-bottom: 45px;
+  }
+
+  /* POINT */
+
+  .story-point {
+    left: 9px;
+
+    top: 42px;
+
+    transform: translateX(-50%);
+  }
+
+  /* CARD */
+
+  .story-card {
+    padding: 28px;
+
+    width: 100%;
+  }
+
+  .story-card-icon {
+    margin-top: 32px;
+  }
+
+  .story-card h3 {
+    font-size: 18px;
+  }
+
+  .story-card p {
+    font-size: 14px;
+  }
+
+  .story-bottom {
+    margin-top: 65px;
+  }
+
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+  .our-story {
+    padding: 80px 6%;
+  }
+
+  .our-story-label {
+    font-size: 10px;
+
+    letter-spacing: 2px;
+  }
+
+  .our-story-label span {
+    width: 30px;
+  }
+
+  .our-story-title h2 {
+    font-size: 45px;
+
+    letter-spacing: -2px;
+  }
+
+  .our-story-intro p {
+    font-size: 14px;
+
+    line-height: 1.8;
+  }
+
+  .story-mini-line {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+  .story-item,
+  .story-item-left,
+  .story-item-right {
+    padding-left: 32px;
+  }
+
+  .story-center-line {
+    left: 7px;
+  }
+
+  .story-point {
+    left: 7px;
+
+    width: 16px;
+
+    height: 16px;
+  }
+
+  .story-card {
+    padding: 24px;
+  }
+
+  .story-number {
+    font-size: 11px;
+  }
+
+  .story-year {
+    font-size: 8px;
+  }
+
+  .story-card-icon {
+    width: 50px;
+
+    height: 50px;
+
+    font-size: 20px;
+  }
+
+  .story-card h3 {
+    font-size: 16px;
+  }
+
+  .story-card p {
+    font-size: 13px;
+  }
+
+  .story-bottom p {
+    font-size: 12px;
+
+    line-height: 1.7;
+  }
+
+}
+
+/* =========================================
+   TOUCH DEVICES
+========================================= */
+
+@media (hover: none) {
+
+  .story-card:hover {
+    transform: none;
+
+    border-color: rgba(255, 255, 255, 0.09);
+
+    background: rgba(255, 255, 255, 0.025);
+
+    box-shadow: none;
+  }
+
+  .story-card:hover::before {
+    width: 0;
+  }
+
+  .story-card:hover::after {
+    opacity: 0;
+  }
+
+  .story-card:hover .story-card-icon {
+    transform: none;
+
+    color: #3b82f6;
+
+    border-color: rgba(59, 130, 246, 0.25);
+
+    box-shadow: none;
+  }
+
+}

@@ -1,0 +1,593 @@
+/* =========================================
+   PROJECTS SECTION
+========================================= */
+
+.projects-section {
+  position: relative;
+  width: 100%;
+  padding: 130px 5% 120px;
+  z-index: 5;
+}
+
+
+/* =========================================
+   SECTION HEADER
+========================================= */
+
+.projects-header {
+  width: min(1250px, 100%);
+  margin: 0 auto 65px;
+}
+
+
+.projects-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 25px;
+
+  color: #2998ff;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+
+.projects-label span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #168cff;
+
+  box-shadow:
+    0 0 15px rgba(22, 140, 255, 0.8);
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.projects-heading-row {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 60px;
+}
+
+
+.projects-heading-row h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(48px, 5vw, 72px);
+
+  line-height: 0.98;
+
+  letter-spacing: -3px;
+
+  font-weight: 800;
+}
+
+
+.projects-heading-row h2 span {
+  color: #2495ff;
+
+  text-shadow:
+    0 0 30px rgba(36, 149, 255, 0.2);
+}
+
+
+.projects-heading-row p {
+  max-width: 440px;
+
+  margin: 0 0 5px;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   PROJECT GRID
+   3 PROJECTS PER ROW
+========================================= */
+
+.projects-grid {
+  width: min(1250px, 100%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+/* =========================================
+   PROJECT CARD
+========================================= */
+
+.project-card {
+  position: relative;
+
+  overflow: hidden;
+
+  min-width: 0;
+
+  border: 1px solid rgba(55, 150, 255, 0.17);
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(7, 35, 75, 0.25),
+      rgba(2, 8, 25, 0.4)
+    );
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+.project-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(50, 155, 255, 0.5);
+
+  box-shadow:
+    0 25px 70px rgba(0, 80, 180, 0.14);
+}
+
+
+/* =========================================
+   PROJECT IMAGE
+========================================= */
+
+.project-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 230px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071a35,
+      #020817
+    );
+}
+
+
+.project-image img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.7s ease,
+    filter 0.7s ease;
+}
+
+
+.project-card:hover .project-image img {
+  transform: scale(1.07);
+
+  filter: brightness(1.08);
+}
+
+
+/* =========================================
+   IMAGE OVERLAY
+========================================= */
+
+.project-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.02),
+      rgba(0, 5, 20, 0.65)
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   PROJECT NUMBER
+========================================= */
+
+.project-number {
+  position: absolute;
+
+  top: 16px;
+  left: 16px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 30px;
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 6px;
+
+  background: rgba(0, 10, 30, 0.55);
+
+  backdrop-filter: blur(10px);
+}
+
+
+/* =========================================
+   OPEN BUTTON
+========================================= */
+
+.project-open {
+  position: absolute;
+
+  top: 16px;
+  right: 16px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  color: #ffffff;
+
+  font-size: 18px;
+
+  border: 1px solid rgba(60, 160, 255, 0.3);
+
+  border-radius: 50%;
+
+  background: rgba(0, 80, 180, 0.2);
+
+  backdrop-filter: blur(10px);
+
+  transition:
+    0.3s ease;
+}
+
+
+.project-card:hover .project-open {
+  background: #168cff;
+
+  border-color: #168cff;
+
+  transform: rotate(45deg);
+}
+
+
+/* =========================================
+   PROJECT CONTENT
+========================================= */
+
+.project-content {
+  padding: 23px 24px 25px;
+}
+
+
+.project-category {
+  color: #2998ff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.8px;
+}
+
+
+.project-content h3 {
+  margin: 10px 0 10px;
+
+  color: #ffffff;
+
+  font-size: 22px;
+
+  font-weight: 750;
+}
+
+
+.project-content p {
+  min-height: 66px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.48);
+
+  font-size: 12px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   TECHNOLOGY TAGS
+========================================= */
+
+.project-tech {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 18px;
+}
+
+
+.project-tech span {
+  padding: 6px 9px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 9px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  transition: 0.3s ease;
+}
+
+
+.project-card:hover .project-tech span {
+  border-color: rgba(50, 150, 255, 0.15);
+}
+
+
+/* =========================================
+   PROJECT FOOTER
+========================================= */
+
+.projects-footer {
+  width: min(1250px, 100%);
+
+  margin: 55px auto 0;
+
+  text-align: center;
+}
+
+
+.projects-footer a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 14px;
+
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+
+.projects-footer a span {
+  color: #2998ff;
+
+  font-weight: 700;
+}
+
+
+.projects-footer a:hover {
+  color: #ffffff;
+
+  gap: 17px;
+}
+
+
+/* =========================================
+   LARGE TABLETS
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .projects-grid {
+    gap: 16px;
+  }
+
+
+  .project-image {
+    height: 210px;
+  }
+
+
+  .project-content {
+    padding: 20px;
+  }
+
+
+  .project-content h3 {
+    font-size: 20px;
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+
+  .projects-heading-row {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+
+  .projects-heading-row p {
+    max-width: 600px;
+  }
+
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .project-image {
+    height: 230px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .projects-section {
+    padding: 90px 5% 80px;
+  }
+
+
+  .projects-header {
+    margin-bottom: 45px;
+  }
+
+
+  .projects-label {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .projects-heading-row h2 {
+    font-size: 44px;
+
+    letter-spacing: -2px;
+  }
+
+
+  .projects-heading-row p {
+    font-size: 13px;
+  }
+
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+
+  .project-image {
+    height: 240px;
+  }
+
+
+  .project-content {
+    padding: 21px;
+  }
+
+
+  .project-content h3 {
+    font-size: 21px;
+  }
+
+
+  .project-content p {
+    min-height: auto;
+
+    font-size: 12px;
+  }
+
+
+  .project-tech {
+    margin-top: 16px;
+  }
+
+
+  .projects-footer {
+    margin-top: 40px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+  .projects-heading-row h2 {
+    font-size: 38px;
+  }
+
+
+  .project-image {
+    height: 210px;
+  }
+
+
+  .project-number {
+    top: 12px;
+    left: 12px;
+  }
+
+
+  .project-open {
+    top: 12px;
+    right: 12px;
+  }
+
+}

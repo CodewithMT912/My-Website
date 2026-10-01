@@ -1,0 +1,904 @@
+/* =========================================
+   OUR IMPACT + CAPABILITIES
+========================================= */
+
+.stats-section {
+  position: relative;
+  width: 100%;
+  padding: 140px 5% 125px;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.stats-container {
+  width: min(1250px, 100%);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.stats-header {
+  max-width: 850px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.stats-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 24px;
+
+  color: #2998ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.stats-label span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #168cff;
+
+  box-shadow:
+    0 0 15px rgba(22, 140, 255, 0.8);
+}
+
+.stats-header h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(50px, 5vw, 74px);
+  line-height: 0.96;
+
+  letter-spacing: -3px;
+  font-weight: 800;
+}
+
+.stats-header h2 span {
+  color: #2495ff;
+
+  text-shadow:
+    0 0 30px rgba(36, 149, 255, 0.25);
+}
+
+.stats-header p {
+  max-width: 700px;
+
+  margin: 28px auto 0;
+
+  color: rgba(255, 255, 255, 0.48);
+
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+
+/* =========================================
+   STATISTICS
+========================================= */
+
+.stats-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid rgba(55, 150, 255, 0.16);
+  border-bottom: 1px solid rgba(55, 150, 255, 0.16);
+}
+
+.stat-item {
+  position: relative;
+
+  min-height: 220px;
+
+  padding: 42px 25px;
+
+  text-align: center;
+
+  transition:
+    background 0.35s ease,
+    transform 0.35s ease;
+}
+
+.stat-item:not(:last-child)::after {
+  content: "";
+
+  position: absolute;
+
+  top: 30px;
+  right: 0;
+
+  width: 1px;
+  height: calc(100% - 60px);
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent,
+      rgba(55, 150, 255, 0.22),
+      transparent
+    );
+}
+
+.stat-item:hover {
+  background: rgba(0, 100, 255, 0.035);
+
+  transform: translateY(-4px);
+}
+
+
+/* =========================================
+   BIG NUMBERS
+========================================= */
+
+.stat-item strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: clamp(48px, 5vw, 68px);
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: -3px;
+
+  text-shadow:
+    0 0 35px rgba(35, 145, 255, 0.18);
+
+  transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
+}
+
+.stat-item:hover strong {
+  color: #2998ff;
+
+  text-shadow:
+    0 0 35px rgba(35, 145, 255, 0.4);
+}
+
+
+/* =========================================
+   STAT TITLES
+========================================= */
+
+.stat-item h3 {
+  margin: 18px 0 10px;
+
+  color: #2998ff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   STAT DESCRIPTION
+========================================= */
+
+.stat-item p {
+  max-width: 220px;
+
+  margin: 0 auto;
+
+  color: rgba(255, 255, 255, 0.42);
+
+  font-size: 11px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CAPABILITIES HEADING
+========================================= */
+
+.capabilities-heading {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 80px;
+
+  align-items: end;
+
+  margin: 105px 0 55px;
+}
+
+.capabilities-heading > div > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #2998ff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.capabilities-heading h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 43px;
+
+  line-height: 1;
+
+  letter-spacing: -2px;
+
+  font-weight: 750;
+}
+
+.capabilities-heading h3 strong {
+  color: #2998ff;
+
+  font-weight: 750;
+}
+
+.capabilities-heading > p {
+  max-width: 620px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.44);
+
+  font-size: 13px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================
+   CAPABILITIES GRID
+========================================= */
+
+.capabilities-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 15px;
+}
+
+
+/* =========================================
+   CAPABILITY CARD
+========================================= */
+
+.capability-card {
+  position: relative;
+
+  min-height: 360px;
+
+  padding: 25px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(55, 150, 255, 0.14);
+
+  border-radius: 16px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(7, 35, 75, 0.28),
+      rgba(2, 8, 25, 0.5)
+    );
+
+  transition:
+    transform 0.4s ease,
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+/* Card glow */
+
+.capability-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  top: -120px;
+  right: -120px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 120, 255, 0.08);
+
+  filter: blur(40px);
+
+  transition: 0.5s ease;
+}
+
+
+/* Bottom glow */
+
+.capability-card::after {
+  content: "";
+
+  position: absolute;
+
+  width: 150px;
+  height: 150px;
+
+  bottom: -100px;
+  left: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(0, 100, 255, 0.05);
+
+  filter: blur(35px);
+
+  transition: 0.5s ease;
+}
+
+.capability-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(45, 150, 255, 0.42);
+
+  box-shadow:
+    0 25px 70px rgba(0, 80, 180, 0.13);
+}
+
+.capability-card:hover::before {
+  transform: scale(1.5);
+
+  background: rgba(0, 130, 255, 0.14);
+}
+
+.capability-card:hover::after {
+  transform: scale(1.5);
+
+  background: rgba(0, 110, 255, 0.1);
+}
+
+
+/* =========================================
+   CARD TOP
+========================================= */
+
+.capability-card-top {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  z-index: 2;
+}
+
+.capability-number {
+  color: rgba(255, 255, 255, 0.25);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.capability-arrow {
+  color: rgba(255, 255, 255, 0.28);
+
+  font-size: 20px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.capability-card:hover .capability-arrow {
+  color: #2998ff;
+
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.capability-icon {
+  position: relative;
+
+  width: 58px;
+  height: 58px;
+
+  margin-top: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(45, 150, 255, 0.2);
+
+  border-radius: 13px;
+
+  background: rgba(0, 100, 255, 0.07);
+
+  transition:
+    background 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.capability-icon::before {
+  content: "";
+
+  width: 22px;
+  height: 22px;
+
+  border: 1px solid rgba(41, 152, 255, 0.8);
+
+  border-radius: 6px;
+
+  transform: rotate(45deg);
+
+  transition: 0.35s ease;
+}
+
+.capability-icon span {
+  position: absolute;
+
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #2998ff;
+
+  box-shadow:
+    0 0 15px rgba(41, 152, 255, 0.8);
+}
+
+.capability-card:hover .capability-icon {
+  background: rgba(0, 120, 255, 0.13);
+
+  border-color: rgba(45, 150, 255, 0.45);
+
+  box-shadow:
+    0 0 30px rgba(0, 110, 255, 0.12);
+}
+
+.capability-card:hover .capability-icon::before {
+  transform: rotate(135deg);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.capability-content {
+  position: relative;
+
+  margin-top: 28px;
+
+  z-index: 2;
+}
+
+.capability-content h3 {
+  margin: 0 0 12px;
+
+  color: #ffffff;
+
+  font-size: 19px;
+
+  line-height: 1.2;
+
+  font-weight: 750;
+}
+
+.capability-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.43);
+
+  font-size: 11px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   TAGS
+========================================= */
+
+.capability-tags {
+  position: absolute;
+
+  left: 25px;
+  bottom: 24px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+
+  z-index: 2;
+}
+
+.capability-tags span {
+  padding: 6px 8px;
+
+  color: rgba(255, 255, 255, 0.38);
+
+  font-size: 8px;
+
+  letter-spacing: 0.5px;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.025);
+}
+
+
+/* =========================================
+   CUSTOM PROJECT CTA
+========================================= */
+
+.capabilities-cta {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 80px;
+
+  margin-top: 100px;
+
+  padding: 65px 0;
+
+  border-top: 1px solid rgba(55, 150, 255, 0.14);
+
+  border-bottom: 1px solid rgba(55, 150, 255, 0.14);
+}
+
+.capabilities-cta-text > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #2998ff;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.capabilities-cta-text h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 43px;
+
+  line-height: 1;
+
+  letter-spacing: -2px;
+
+  font-weight: 750;
+}
+
+.capabilities-cta-text h3 strong {
+  color: #2998ff;
+
+  font-weight: 750;
+}
+
+.capabilities-cta-description {
+  display: flex;
+
+  align-items: center;
+}
+
+.capabilities-cta-description p {
+  max-width: 620px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: 14px;
+
+  line-height: 1.9;
+}
+
+
+/* =========================================
+   BOTTOM STATUS
+========================================= */
+
+.stats-bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 45px;
+}
+
+.stats-bottom > span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #168cff;
+
+  box-shadow:
+    0 0 12px rgba(22, 140, 255, 0.8);
+
+  animation: statsPulse 2s ease-in-out infinite;
+}
+
+.stats-bottom p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 13px;
+}
+
+@keyframes statsPulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+
+/* =========================================
+   LARGE TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .capabilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .capability-card {
+    min-height: 340px;
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .stats-section {
+    padding: 110px 5% 95px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-item:nth-child(2)::after {
+    display: none;
+  }
+
+  .stat-item:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(55, 150, 255, 0.16);
+  }
+
+  .capabilities-heading {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    margin-top: 80px;
+  }
+
+  .capabilities-cta {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+
+    margin-top: 75px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .stats-section {
+    padding: 90px 5% 80px;
+  }
+
+  .stats-header {
+    margin-bottom: 50px;
+  }
+
+  .stats-label {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+  .stats-header h2 {
+    font-size: 44px;
+
+    letter-spacing: -2px;
+  }
+
+  .stats-header p {
+    font-size: 13px;
+  }
+
+  /* Statistics */
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-item {
+    min-height: auto;
+
+    padding: 38px 20px;
+
+    border-bottom: 1px solid rgba(55, 150, 255, 0.14);
+  }
+
+  .stat-item:last-child {
+    border-bottom: none;
+  }
+
+  .stat-item:not(:last-child)::after {
+    display: none;
+  }
+
+  .stat-item strong {
+    font-size: 55px;
+  }
+
+  /* Capabilities heading */
+
+  .capabilities-heading {
+    margin-top: 65px;
+    margin-bottom: 45px;
+  }
+
+  .capabilities-heading h3 {
+    font-size: 36px;
+  }
+
+  .capabilities-heading > p {
+    font-size: 12px;
+  }
+
+  /* Capability cards */
+
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .capability-card {
+    min-height: 340px;
+
+    padding: 23px;
+  }
+
+  .capability-icon {
+    margin-top: 32px;
+  }
+
+  .capability-content {
+    margin-top: 24px;
+  }
+
+  .capability-content h3 {
+    font-size: 18px;
+  }
+
+  .capability-content p {
+    font-size: 11px;
+  }
+
+  .capability-tags {
+    left: 23px;
+    bottom: 22px;
+  }
+
+  /* CTA */
+
+  .capabilities-cta {
+    margin-top: 65px;
+
+    padding: 50px 0;
+  }
+
+  .capabilities-cta-text h3 {
+    font-size: 36px;
+  }
+
+  .capabilities-cta-description p {
+    font-size: 12px;
+  }
+
+  .stats-bottom {
+    text-align: center;
+  }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+  .stats-header h2 {
+    font-size: 38px;
+  }
+
+  .stat-item strong {
+    font-size: 48px;
+  }
+
+  .capabilities-heading h3 {
+    font-size: 32px;
+  }
+
+  .capability-card {
+    min-height: 330px;
+  }
+
+  .capabilities-cta-text h3 {
+    font-size: 32px;
+  }
+
+}

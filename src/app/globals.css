@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+
+  position: relative;
+
+  overflow-x: hidden;
+
+  min-height: 100vh;
+
+  background: #020617;
+
+  color: white;
+}
+
+.site-content {
+  position: relative;
+
+  z-index: 2;
+}
+
+/* Shared interaction for content boxes across the site. */
+@media (hover: hover) and (pointer: fine) {
+  .site-content :is(
+    .story-card,
+    .drive-card,
+    .what-we-do-card,
+    .why-codewithmt-card,
+    .whatsapp-card,
+    .social-link-card,
+    .contact-service-card,
+    .expertise-item,
+    .faq-item,
+    .value-card,
+    .timeline-card,
+    .contact-card,
+    .industry-card,
+    .process-step,
+    .project-card,
+    .showcase-card,
+    .category-card,
+    .case-card,
+    .mini-case,
+    .tech-card,
+    .approach-step,
+    .stats-card,
+    .feature-card,
+    .service-card,
+    .summary-card,
+    .capability-card,
+    .stat-item,
+    .testimonial-card,
+    .why-card
+  ) {
+    transition:
+      transform 0.28s ease,
+      border-color 0.28s ease,
+      box-shadow 0.28s ease,
+      background-color 0.28s ease;
+  }
+
+  .site-content :is(
+    .story-card,
+    .drive-card,
+    .what-we-do-card,
+    .why-codewithmt-card,
+    .whatsapp-card,
+    .social-link-card,
+    .contact-service-card,
+    .expertise-item,
+    .faq-item,
+    .value-card,
+    .timeline-card,
+    .contact-card,
+    .industry-card,
+    .process-step,
+    .project-card,
+    .showcase-card,
+    .category-card,
+    .case-card,
+    .mini-case,
+    .tech-card,
+    .approach-step,
+    .stats-card,
+    .feature-card,
+    .service-card,
+    .summary-card,
+    .capability-card,
+    .stat-item,
+    .testimonial-card,
+    .why-card
+  ):hover {
+    transform: translateY(-7px);
+    border-color: rgba(77, 163, 255, 0.55);
+    background-color: rgba(31, 111, 190, 0.08);
+    box-shadow: 0 18px 38px rgba(0, 91, 210, 0.18);
+  }
+}

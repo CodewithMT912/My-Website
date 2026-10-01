@@ -1,0 +1,425 @@
+/* =========================================
+   HOW WE WORK
+========================================= */
+
+.process-section {
+  position: relative;
+  width: 100%;
+  padding: 130px 5% 120px;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.process-container {
+  width: min(1250px, 100%);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.process-header {
+  max-width: 800px;
+  margin: 0 auto 85px;
+  text-align: center;
+}
+
+.process-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 24px;
+
+  color: #2998ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.process-label span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #168cff;
+
+  box-shadow: 0 0 15px rgba(22, 140, 255, 0.8);
+}
+
+.process-header h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(48px, 5vw, 72px);
+  line-height: 0.98;
+
+  letter-spacing: -3px;
+  font-weight: 800;
+}
+
+.process-header h2 span {
+  color: #2495ff;
+
+  text-shadow:
+    0 0 30px rgba(36, 149, 255, 0.25);
+}
+
+.process-header p {
+  max-width: 650px;
+
+  margin: 25px auto 0;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.process-timeline {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 20px;
+}
+
+
+/* =========================================
+   CONNECTING LINE
+========================================= */
+
+.process-line {
+  position: absolute;
+
+  top: 31px;
+  left: 10%;
+
+  width: 80%;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(35, 145, 255, 0.5),
+      rgba(35, 145, 255, 0.5),
+      transparent
+    );
+
+  z-index: 0;
+}
+
+
+/* =========================================
+   STEP
+========================================= */
+
+.process-step {
+  position: relative;
+
+  min-width: 0;
+
+  text-align: center;
+
+  z-index: 2;
+}
+
+
+/* =========================================
+   NUMBER CIRCLE
+========================================= */
+
+.process-number {
+  position: relative;
+
+  width: 64px;
+  height: 64px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  border: 1px solid rgba(50, 155, 255, 0.4);
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(10, 70, 140, 0.5),
+      rgba(2, 8, 25, 0.95)
+    );
+
+  box-shadow:
+    0 0 25px rgba(0, 110, 255, 0.12);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+.process-step:hover .process-number {
+  transform: scale(1.1);
+
+  border-color: #2998ff;
+
+  box-shadow:
+    0 0 30px rgba(0, 120, 255, 0.3);
+}
+
+
+/* =========================================
+   DOT
+========================================= */
+
+.process-dot {
+  position: absolute;
+
+  top: 29px;
+  left: 50%;
+
+  width: 5px;
+  height: 5px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background: #2998ff;
+
+  box-shadow:
+    0 0 12px rgba(41, 152, 255, 0.9);
+
+  opacity: 0;
+
+  transition: 0.3s ease;
+}
+
+.process-step:hover .process-dot {
+  opacity: 1;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.process-content {
+  padding: 35px 10px 0;
+}
+
+.process-content h3 {
+  margin: 0 0 13px;
+
+  color: #ffffff;
+
+  font-size: 20px;
+
+  font-weight: 750;
+}
+
+.process-content p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.45);
+
+  font-size: 12px;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.process-bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 65px;
+}
+
+.process-bottom span {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #168cff;
+
+  box-shadow:
+    0 0 12px rgba(22, 140, 255, 0.8);
+
+  animation: processPulse 2s ease-in-out infinite;
+}
+
+.process-bottom p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 13px;
+}
+
+@keyframes processPulse {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.9);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .process-section {
+    padding: 100px 5% 90px;
+  }
+
+  .process-timeline {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 50px 25px;
+  }
+
+  .process-line {
+    display: none;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .process-section {
+    padding: 90px 5% 80px;
+  }
+
+  .process-header {
+    margin-bottom: 55px;
+  }
+
+  .process-label {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .process-header h2 {
+    font-size: 44px;
+    letter-spacing: -2px;
+  }
+
+  .process-header p {
+    font-size: 13px;
+  }
+
+  .process-timeline {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .process-step {
+    display: grid;
+
+    grid-template-columns: 64px 1fr;
+
+    column-gap: 20px;
+
+    text-align: left;
+  }
+
+  .process-number {
+    grid-row: span 2;
+
+    margin: 0;
+  }
+
+  .process-content {
+    padding: 7px 0 0;
+  }
+
+  .process-content h3 {
+    font-size: 19px;
+  }
+
+  .process-content p {
+    font-size: 12px;
+  }
+
+  .process-dot {
+    display: none;
+  }
+
+  .process-bottom {
+    text-align: center;
+  }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+  .process-header h2 {
+    font-size: 38px;
+  }
+
+  .process-step {
+    grid-template-columns: 55px 1fr;
+
+    column-gap: 15px;
+  }
+
+  .process-number {
+    width: 55px;
+    height: 55px;
+  }
+
+}

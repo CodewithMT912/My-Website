@@ -1,0 +1,498 @@
+/* =========================================
+   CODEWITH_MT NAVBAR
+========================================= */
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 0 30px;
+}
+
+.navbar-container {
+  max-width: 1400px;
+  height: 72px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 25px;
+
+  background: rgba(3, 8, 25, 0.75);
+
+  border: 1px solid rgba(50, 140, 255, 0.35);
+  border-radius: 18px;
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  box-shadow:
+    0 0 30px rgba(0, 90, 255, 0.12);
+
+  position: relative;
+  z-index: 10000;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  font-size: 23px;
+  font-weight: 800;
+
+  letter-spacing: -0.5px;
+}
+
+.logo-code {
+  color: #ffffff;
+}
+
+.logo-mt {
+  color: #2694ff;
+
+  text-shadow:
+    0 0 15px rgba(38, 148, 255, 0.8);
+}
+
+
+/* =========================================
+   DESKTOP NAV
+========================================= */
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.75);
+
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #2694ff;
+}
+
+
+/* =========================================
+   DESKTOP CTA
+========================================= */
+
+.navbar-cta {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  padding: 11px 18px;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  background: linear-gradient(
+    135deg,
+    #006cff,
+    #168cff
+  );
+
+  border-radius: 10px;
+
+  transition: 0.3s ease;
+
+  box-shadow:
+    0 0 20px rgba(0, 110, 255, 0.3);
+}
+
+.navbar-cta:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 0 30px rgba(0, 110, 255, 0.6);
+}
+
+
+/* =========================================
+   MOBILE BUTTON
+========================================= */
+
+.mobile-menu-button {
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  width: 44px;
+  height: 44px;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: white;
+
+  font-size: 27px;
+
+  cursor: pointer;
+
+  z-index: 10002;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================
+   MOBILE NAV
+========================================= */
+
+.mobile-nav {
+  display: none;
+}
+
+
+/* =========================================
+   MOBILE ANIMATION
+========================================= */
+
+@keyframes mobileNavSlideDown {
+
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =========================================
+   TABLET / MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    top: 12px;
+    padding: 0 15px;
+  }
+
+
+  .navbar-container {
+    height: 62px;
+    padding: 0 18px;
+  }
+
+
+  /* Hide desktop navigation */
+
+  .desktop-nav,
+  .navbar-cta {
+    display: none;
+  }
+
+
+  /* Show mobile button */
+
+  .mobile-menu-button {
+    display: flex;
+  }
+
+
+  /* Mobile menu */
+
+  .mobile-nav {
+
+    display: flex;
+
+    position: absolute;
+
+    top: calc(100% + 8px);
+
+    left: 15px;
+    right: 15px;
+
+    z-index: 10001;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 15px;
+
+    background: rgba(3, 8, 25, 0.97);
+
+    border: 1px solid rgba(50, 140, 255, 0.3);
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    box-shadow:
+      0 15px 40px rgba(0, 0, 0, 0.45);
+
+    animation: mobileNavSlideDown 0.2s ease-out;
+  }
+
+
+  /* Mobile links */
+
+  .mobile-nav-link {
+
+    display: block;
+
+    width: 100%;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 14px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    transition: 0.25s ease;
+
+    -webkit-tap-highlight-color: transparent;
+  }
+
+
+  .mobile-nav-link:hover,
+  .mobile-nav-link.active {
+
+    background: rgba(38, 148, 255, 0.12);
+
+    color: #2694ff;
+  }
+
+
+  /* Mobile CTA */
+
+  .mobile-cta {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 8px;
+
+    padding: 13px;
+
+    color: white;
+
+    text-decoration: none;
+
+    background: #006cff;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+  }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .navbar-container {
+    padding: 0 15px;
+  }
+
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .mobile-nav {
+    left: 10px;
+    right: 10px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .desktop-nav,
+  .navbar-cta {
+    display: none;
+  }
+
+  .navbar {
+    top: 12px;
+    padding: 0 15px;
+  }
+
+  .navbar-container {
+    height: 62px;
+    padding: 0 18px;
+
+    position: relative;
+    z-index: 10000;
+  }
+
+  .mobile-menu-button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    position: relative;
+    z-index: 10002;
+
+    pointer-events: auto;
+  }
+
+  .mobile-nav {
+    display: flex;
+
+    position: absolute;
+
+    top: 82px;
+
+    left: 15px;
+    right: 15px;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 15px;
+
+    background: rgba(3, 8, 25, 0.98);
+
+    border: 1px solid rgba(50, 140, 255, 0.35);
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    box-shadow:
+      0 15px 40px rgba(0, 0, 0, 0.5);
+
+    z-index: 10001;
+
+    animation: mobileNavSlideDown 0.2s ease-out;
+  }
+
+  .mobile-nav-link {
+    display: block;
+
+    width: 100%;
+
+    padding: 14px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    transition: 0.2s ease;
+  }
+
+  .mobile-nav-link:hover,
+  .mobile-nav-link.active {
+    background: rgba(38, 148, 255, 0.12);
+    color: #2694ff;
+  }
+
+  .mobile-cta {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 8px;
+
+    padding: 13px;
+
+    color: white;
+
+    text-decoration: none;
+
+    background: #006cff;
+
+    border-radius: 8px;
+  }
+} 
+
+@media (max-width: 900px) {
+  .navbar {
+    z-index: 999999 !important;
+  }
+
+  .navbar-container {
+    z-index: 999999 !important;
+  }
+
+  .mobile-menu-button {
+    position: relative !important;
+    z-index: 9999999 !important;
+    pointer-events: auto !important;
+  }
+
+  .mobile-nav {
+    z-index: 9999998 !important;
+  }
+}

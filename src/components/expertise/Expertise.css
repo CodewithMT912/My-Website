@@ -1,0 +1,551 @@
+/* =========================================
+   OUR EXPERTISE
+========================================= */
+
+.expertise-section {
+  position: relative;
+  width: 100%;
+  padding: 130px 5% 120px;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.expertise-container {
+  width: min(1250px, 100%);
+  margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.expertise-header {
+  max-width: 800px;
+  margin: 0 auto 75px;
+  text-align: center;
+}
+
+.expertise-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  margin-bottom: 24px;
+
+  color: #2998ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.expertise-label span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #168cff;
+
+  box-shadow: 0 0 15px rgba(22, 140, 255, 0.8);
+}
+
+.expertise-header h2 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(48px, 5vw, 72px);
+  line-height: 0.98;
+
+  letter-spacing: -3px;
+  font-weight: 800;
+}
+
+.expertise-header h2 span {
+  color: #2495ff;
+
+  text-shadow:
+    0 0 30px rgba(36, 149, 255, 0.25);
+}
+
+.expertise-header p {
+  max-width: 650px;
+
+  margin: 25px auto 0;
+
+  color: rgba(255, 255, 255, 0.5);
+
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   CENTRAL TECH AREA
+========================================= */
+
+.expertise-core {
+  position: relative;
+
+  width: 390px;
+  height: 390px;
+
+  margin: 0 auto 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =========================================
+   GLOW
+========================================= */
+
+.expertise-glow {
+  position: absolute;
+
+  width: 280px;
+  height: 280px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(0, 130, 255, 0.22) 0%,
+      rgba(0, 90, 220, 0.08) 45%,
+      transparent 70%
+    );
+
+  filter: blur(25px);
+
+  animation: expertiseGlow 5s ease-in-out infinite;
+}
+
+
+@keyframes expertiseGlow {
+  0%,
+  100% {
+    transform: scale(0.9);
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+
+/* =========================================
+   ORBIT RINGS
+========================================= */
+
+.expertise-ring {
+  position: absolute;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(45, 150, 255, 0.2);
+
+  pointer-events: none;
+}
+
+.expertise-ring-one {
+  width: 300px;
+  height: 300px;
+
+  transform: rotate(25deg) scaleX(1.35);
+
+  animation: orbitOne 14s linear infinite;
+}
+
+.expertise-ring-two {
+  width: 340px;
+  height: 340px;
+
+  transform: rotate(-25deg) scaleX(1.35);
+
+  border-color: rgba(45, 150, 255, 0.1);
+
+  animation: orbitTwo 18s linear infinite reverse;
+}
+
+
+@keyframes orbitOne {
+  from {
+    transform: rotate(0deg) scaleX(1.35);
+  }
+
+  to {
+    transform: rotate(360deg) scaleX(1.35);
+  }
+}
+
+
+@keyframes orbitTwo {
+  from {
+    transform: rotate(0deg) scaleX(1.35);
+  }
+
+  to {
+    transform: rotate(360deg) scaleX(1.35);
+  }
+}
+
+
+/* =========================================
+   CORE CONTENT
+========================================= */
+
+.expertise-core-content {
+  position: relative;
+
+  width: 190px;
+  height: 190px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(12, 60, 120, 0.45),
+      rgba(2, 8, 25, 0.9)
+    );
+
+  border: 1px solid rgba(50, 155, 255, 0.35);
+
+  box-shadow:
+    0 0 40px rgba(0, 110, 255, 0.16),
+    inset 0 0 40px rgba(0, 80, 180, 0.1);
+
+  z-index: 5;
+}
+
+
+.expertise-core-content span {
+  margin-bottom: 10px;
+
+  color: #2998ff;
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+
+.expertise-core-content strong {
+  color: #ffffff;
+
+  font-size: 29px;
+
+  line-height: 0.95;
+
+  letter-spacing: -1px;
+}
+
+
+.expertise-core-content small {
+  margin-top: 12px;
+
+  color: rgba(255, 255, 255, 0.38);
+
+  font-size: 7px;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================
+   TECHNOLOGY GROUPS
+========================================= */
+
+.expertise-groups {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 18px;
+
+  margin-top: 20px;
+}
+
+
+.expertise-group {
+  position: relative;
+
+  padding: 28px;
+
+  border: 1px solid rgba(55, 150, 255, 0.15);
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(7, 35, 75, 0.22),
+      rgba(2, 8, 25, 0.38)
+    );
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+
+.expertise-group:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(50, 155, 255, 0.4);
+
+  box-shadow:
+    0 20px 60px rgba(0, 80, 180, 0.1);
+}
+
+
+.expertise-group h3 {
+  margin: 0 0 20px;
+
+  color: #2998ff;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================
+   TECHNOLOGY ITEMS
+========================================= */
+
+.expertise-items {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+}
+
+
+.expertise-item {
+  padding: 9px 13px;
+
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 11px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 7px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  transition:
+    color 0.25s ease,
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.expertise-item:hover {
+  color: #ffffff;
+
+  background: rgba(0, 110, 255, 0.12);
+
+  border-color: rgba(50, 155, 255, 0.35);
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   BOTTOM STATUS
+========================================= */
+
+.expertise-bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 55px;
+}
+
+
+.expertise-status {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #168cff;
+
+  box-shadow:
+    0 0 12px rgba(22, 140, 255, 0.8);
+
+  animation: statusPulse 2s ease-in-out infinite;
+}
+
+
+@keyframes statusPulse {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+.expertise-bottom p {
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.4);
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 800px) {
+
+  .expertise-section {
+    padding: 100px 5% 90px;
+  }
+
+  .expertise-core {
+    width: 340px;
+    height: 340px;
+  }
+
+  .expertise-groups {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .expertise-section {
+    padding: 90px 5% 80px;
+  }
+
+  .expertise-header {
+    margin-bottom: 55px;
+  }
+
+  .expertise-label {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .expertise-header h2 {
+    font-size: 44px;
+    letter-spacing: -2px;
+  }
+
+  .expertise-header p {
+    font-size: 13px;
+  }
+
+  .expertise-core {
+    width: 290px;
+    height: 290px;
+
+    margin-bottom: 55px;
+  }
+
+  .expertise-core-content {
+    width: 150px;
+    height: 150px;
+  }
+
+  .expertise-core-content strong {
+    font-size: 23px;
+  }
+
+  .expertise-ring-one {
+    width: 230px;
+    height: 230px;
+  }
+
+  .expertise-ring-two {
+    width: 260px;
+    height: 260px;
+  }
+
+  .expertise-group {
+    padding: 22px;
+  }
+
+  .expertise-item {
+    font-size: 10px;
+    padding: 8px 10px;
+  }
+
+  .expertise-bottom {
+    text-align: center;
+  }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+  .expertise-header h2 {
+    font-size: 38px;
+  }
+
+  .expertise-core {
+    width: 260px;
+    height: 260px;
+  }
+
+  .expertise-core-content {
+    width: 135px;
+    height: 135px;
+  }
+
+  .expertise-ring-one {
+    width: 205px;
+    height: 205px;
+  }
+
+  .expertise-ring-two {
+    width: 230px;
+    height: 230px;
+  }
+
+}
